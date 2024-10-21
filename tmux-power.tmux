@@ -31,53 +31,29 @@ show_upload_speed="$(tmux_get @tmux_power_show_upload_speed false)"
 show_download_speed="$(tmux_get @tmux_power_show_download_speed false)"
 show_web_reachable="$(tmux_get @tmux_power_show_web_reachable false)"
 prefix_highlight_pos=$(tmux_get @tmux_power_prefix_highlight_pos)
-time_format=$(tmux_get @tmux_power_time_format '%T')
+time_format=$(tmux_get @tmux_power_time_format '%H:%M')
 date_format=$(tmux_get @tmux_power_date_format '%F')
 # short for Theme-Colour
-TC=$(tmux_get '@tmux_power_theme' 'gold')
+TC=$(tmux_get '@tmux_power_theme' 'catppuccin')
 case $TC in
-    'gold' )
+    'catppuccin' )
         TC='#ffb86c'
         ;;
-    'redwine' )
-        TC='#b34a47'
-        ;;
-    'moon' )
-        TC='#00abab'
-        ;;
-    'forest' )
-        TC='#228b22'
-        ;;
-    'violet' )
-        TC='#9370db'
-        ;;
-    'snow' )
-        TC='#fffafa'
-        ;;
-    'coral' )
-        TC='#ff7f50'
-        ;;
-    'sky' )
-        TC='#87ceeb'
-        ;;
-    'everforest' )
-        TC='#a7c080'
-        ;;
-    'default' ) # Useful when your term changes colour dynamically (e.g. pywal)
-        TC='colour3'
+    'gruvbox' )
+        TC='#8aadf4'
         ;;
 esac
 
 G01=#080808 #232
 G02=#121212 #233
 G03=#1c1c1c #234
-G04=#262626 #235
+G04=#24273A #235
 G05=#303030 #236
 G06=#3a3a3a #237
 G07=#444444 #238
 G08=#4e4e4e #239
 G09=#585858 #240
-G10=#626262 #241
+G10=#494d64 #241
 G11=#6c6c6c #242
 G12=#767676 #243
 
