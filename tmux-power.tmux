@@ -51,7 +51,7 @@ G12=#767676 #243
 
 FG="$G10"
 BG="$G04"
-ST1=#b8c0e0
+ST1=#8aadf4
 
 # Status options
 tmux_set status-interval 1
