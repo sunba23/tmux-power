@@ -34,15 +34,7 @@ prefix_highlight_pos=$(tmux_get @tmux_power_prefix_highlight_pos)
 time_format=$(tmux_get @tmux_power_time_format '%H:%M')
 date_format=$(tmux_get @tmux_power_date_format '%F')
 # short for Theme-Colour
-TC=$(tmux_get '@tmux_power_theme' 'catppuccin')
-case $TC in
-    'catppuccin' )
-        TC='#ffb86c'
-        ;;
-    'gruvbox' )
-        TC='#8aadf4'
-        ;;
-esac
+TC='#ffb86c'
 
 G01=#080808 #232
 G02=#121212 #233
